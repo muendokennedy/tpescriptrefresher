@@ -1,5 +1,12 @@
-type Quantity = 50 | 100
+// Nullable types
 
-type Metric = 'cm' | 'inch'
+function greet(name: string | null | undefined){
 
-let quantity: Quantity
+  if(name){
+    console.log(name.toUpperCase())
+  } else {
+    console.log('Holla')
+  }
+}
+
+greet('Kennedy Munyao')
