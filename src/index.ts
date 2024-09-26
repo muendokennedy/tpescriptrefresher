@@ -1,12 +1,9 @@
-// A new way to define objects in typescript
-type Employee = {
-  readonly id: number,
-  name: string,
-  retire: (date: Date) => void
+function kgToLbs(weight: string | number): number{
+  if(typeof weight === 'number'){
+    return weight * 2.2
+  } else {
+    return parseInt(weight) * 2.2
+  }
 }
-
-let employee: Employee = {
-  id: 5,
-  name: 'Kennedy Muendo',
-  retire: (date: Date) => console.log(date)
-}
+console.log(kgToLbs(10))
+console.log(kgToLbs('10Kg'))

@@ -1,12 +1,12 @@
 "use strict";
-function calculateTax(income, taxYear) {
-    if (taxYear < 2024) {
-        return income * 1.2;
+function kgToLbs(weight) {
+    if (typeof weight === 'number') {
+        return weight * 2.2;
     }
     else {
-        return income * 1.3;
+        return parseInt(weight) * 2.2;
     }
 }
-const tax = calculateTax(10000, 2024);
-console.log(tax);
+console.log(kgToLbs(10));
+console.log(kgToLbs('10Kg'));
 //# sourceMappingURL=index.js.map
