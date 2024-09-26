@@ -1,11 +1,8 @@
-function calculateTax(income: number, taxYear = 2022): number{
-  if(taxYear < 2024){
-    return income * 1.2
-  } else {
-    return income * 1.3
-  }
+let employee: {
+  readonly id: number,
+  name: string,
+  retire: (date: Date) => void
+} = { id: 1, 
+  name: 'Kennedy Munyao', 
+  retire: (date: Date) => console.log(date) 
 }
-
-const tax = calculateTax(10_000, 2024)
-
-console.log(tax)
