@@ -1,8 +1,12 @@
-let employee: {
+// A new way to define objects in typescript
+type Employee = {
   readonly id: number,
   name: string,
   retire: (date: Date) => void
-} = { id: 1, 
-  name: 'Kennedy Munyao', 
-  retire: (date: Date) => console.log(date) 
+}
+
+let employee: Employee = {
+  id: 5,
+  name: 'Kennedy Muendo',
+  retire: (date: Date) => console.log(date)
 }
