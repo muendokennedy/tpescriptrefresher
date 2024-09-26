@@ -1,11 +1,8 @@
 "use strict";
-function greet(name) {
-    if (name) {
-        console.log(name.toUpperCase());
-    }
-    else {
-        console.log('Holla');
-    }
+var _a;
+function getCustomer(id) {
+    return id === 0 ? null : { birthDay: new Date() };
 }
-greet('Kennedy Munyao');
+let customer = getCustomer(24);
+console.log((_a = customer === null || customer === void 0 ? void 0 : customer.birthDay) === null || _a === void 0 ? void 0 : _a.getFullYear());
 //# sourceMappingURL=index.js.map
