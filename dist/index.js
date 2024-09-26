@@ -1,10 +1,12 @@
 "use strict";
-var Size;
-(function (Size) {
-    Size[Size["Small"] = 1] = "Small";
-    Size[Size["Medium"] = 2] = "Medium";
-    Size[Size["Large"] = 3] = "Large";
-})(Size || (Size = {}));
-let mySize = Size.Large;
-console.log(mySize);
+function calculateTax(income, taxYear) {
+    if (taxYear < 2024) {
+        return income * 1.2;
+    }
+    else {
+        return income * 1.3;
+    }
+}
+const tax = calculateTax(10000, 2024);
+console.log(tax);
 //# sourceMappingURL=index.js.map
